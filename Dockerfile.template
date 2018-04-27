@@ -7,8 +7,3 @@ ENV INITSYSTEM on
 # download DHT libraries for golang
 RUN go get -u github.com/d2r2/go-dht
 
-# copy start.sh script to root dir
-COPY start.sh /
-
-# run start.sh on start
-CMD ["bash", "/start.sh"]
